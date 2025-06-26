@@ -1,5 +1,5 @@
 
-# Go: Shallow Copy, Deep Copy e Arquitetura com Interfaces (Exemplo da TV)
+# Go: Shallow Copy, Deep Copy e Arquitetura com Interfaces
 
 ## 🧠 Conceitos abordados
 
