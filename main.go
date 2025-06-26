@@ -1,12 +1,23 @@
 // main.go
 package main
 
-import shallowcopy "deep_shallowcopy/shallowCopy"
+import (
+	deepcopy "deep_shallowcopy/deepCopy"
+	shallowcopy "deep_shallowcopy/shallowCopy"
+)
 
 func main() {
-	var copia shallowcopy.ShallowCopyInterface = shallowcopy.ShallowCopy{}
+	var copiaShallow shallowcopy.ShallowCopyInterface = shallowcopy.ShallowCopy{}
 
-	copia.ExampleArrays()
-	copia.ExampleMaps()
-	copia.ExampleStructs()
+	copiaShallow.ExampleArrays()
+	copiaShallow.ExampleMaps()
+	copiaShallow.ExampleStructs()
+
+	var copiaDeep deepcopy.DeepCopyInterface = deepcopy.DeepCopyStruct{}
+
+	copiaDeep.ExampleSlices()
+	copiaDeep.ExampleMaps()
+	copiaDeep.ExampleStructs()
+	copiaDeep.ExampleJSON()
+
 }
